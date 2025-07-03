@@ -1,0 +1,40 @@
+$grid-gutter-width: 30px !default;
+$container-desktop: (900px + $grid-gutter-width) !default;
+$container-large-desktop: (900px + $grid-gutter-width) !default;
+
+
+
+@import // Original import statement
+  {% if site.bootwatch %}
+    "bootswatch/{{site.bootwatch | downcase}}/variables",
+  {% endif %}
+
+  "bootstrap",
+
+  {% if site.bootwatch %}
+    "bootswatch/{{site.bootwatch | downcase}}/bootswatch",
+  {% endif %}
+
+  // "syntax-highlighting",
+  "typeahead",
+  "jekyll-doc-theme"
+;
+$code-background-color: scale-color('#272B30', $lightness: 20%);
+$highlight-background: scale-color('#272B30', $lightness: 20%);
+$highlight-background-color: '#272B30'; //scale-color('#272B30', $lightness: 20%); */
+@media (min-width: 992px) {
+    .page-content {
+        width: 970px;
+    }
+};
+@media (min-width: 1200px) {
+    .page-content {
+        width: 1170px;
+    }
+};
+.page-content {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+};

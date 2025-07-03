@@ -3,7 +3,29 @@ title: Installation
 permalink: /docs/installation/
 ---
 
-## Linux
+## Windows
+
+**Download:** TODO
+
+**LLVM/CLANG Download:** [https://github.com/llvm/llvm-project/releases/download/llvmorg-18.1.8/LLVM-18.1.8-win64.exe](https://github.com/llvm/llvm-project/releases/download/llvmorg-18.1.8/LLVM-18.1.8-win64.exe)
+
+## Linux (Binarys)
+
+### Ubuntu / Debian
+```sh
+wget TODO
+sudo apt install wirthx-0.1.0-amd64.deb
+```
+
+### Other Distributions
+
+
+```sh
+wget TODO
+tar xvf  wirthx-0.1.0-amd64.tgz
+```
+
+## Linux (from source)
 
 ### Cloning the repository
 
@@ -28,13 +50,9 @@ sudo apt-get install -y llvm-18 llvm-18-dev
 
 ....
 
-### Building the Compiler 
+### Building the Compiler
 
 ```sh
 cmake -B "build" -DCMAKE_BUILD_TYPE=Release
 cmake --build "build" --config Release
 ```
-
-## Windows
-
-There is no installation guide for windows available yet.

@@ -2,6 +2,7 @@
   docs:
     - installation
     - quickstart
+    - datatypes
 - title: API Documentation
   docs:
     - system

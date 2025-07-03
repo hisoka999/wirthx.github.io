@@ -5,16 +5,27 @@
 layout: page
 title: WirthX
 ---
-## About
 
 Wirthx is an experimental pascal compiler.
-The compiler is named after Nicolaus Wirth the creator of pascal.
+The compiler is named after Niklaus Wirth the creator of pascal.
+
+[Download Wirthx 0.1.0](https://github.com/wirthx-compiler/wirthx/releases/tag/v0.1.0){: .btn}
+
+
 
 ## Compiler
+> <span class="label label-info">Info</span>
+> The compiler is based on llvm and will generate a native binary for the target plattform.
+> For now only `linux-x86-64` and `win64` are supported.
 
-The compiler is based on llvm and will generate a native binary for the target plattform.
-For now only `linux-x86-64` and `windows-x86-64` are supported.
+## Current Restrictions
 
+> <span class="label label-warning">Warning</span>
+> - only ascii characters are allowed in the source code
+> - no support for `set` types
+> - no support for `file` types with a sub type
+> - no support for `packed` types
+> - no support for `class` or `object` types
 ### Options
 
 | **Option**       | **Values**      | **Description**                                  	 |
@@ -40,7 +51,7 @@ wirthx testfiles/hello.pas
 The compiler will generate a native executable based on the program name defined in the program unit.
 
 ```sh
-wirthx -c testfiles/hello.pas
+wirthx testfiles/hello.pas
 ```
 
 # Examples
